@@ -55,7 +55,8 @@
         <activity android:name=".Calender" />
         <activity android:name=".Secret" />
         <activity android:name=".Kitchen" />
-        <activity android:name=".Shop"></activity>
+        <activity android:name=".Shop" />
+        <activity android:name=".Info"></activity>
     </application>
 
 </manifest>

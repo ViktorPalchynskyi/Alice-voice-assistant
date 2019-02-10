@@ -5,9 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import com.startapp.android.publish.adsCommon.AutoInterstitialPreferences;
+import com.startapp.android.publish.adsCommon.StartAppAd;
 import com.startapp.android.publish.adsCommon.StartAppSDK;
 
 import java.util.ArrayList;
@@ -15,6 +19,11 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Content extends AppCompatActivity {
+
+
+
+    ImageView info;
+
 
     String[] listViewText = new String[]{
             "Основные", "Звуки", "Умные колонки", "Аудиокниги", "Телевизор", "Телофоны", "Windows", "Приложения и сайты", "Игры", "Новости", "Для детей", "Музыка и радио","Камера","Словари","Погода","Калькулятор","Таймеры и Будильники","Мести и маршруты","Навигатор","География","История","Биология","Физика и Химия","Люди","Напоминания","Праздники","Календарь","Секретые команды","Кухня","Покупки"
@@ -32,7 +41,11 @@ public class Content extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         StartAppSDK.init(this, "201242710", true);
+        StartAppAd.enableAutoInterstitial();
+
         setContentView(R.layout.activity_content);
+
+
 
 
         List<HashMap<String, String>> arrList = new ArrayList<>();
@@ -153,5 +166,23 @@ public class Content extends AppCompatActivity {
 
             }
         });
+
+        info = (ImageView) findViewById(R.id.btn_info);
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               startActivity(new Intent(getApplicationContext(), Info.class));
+
+            }
+        });
+
+
+        StartAppAd.setAutoInterstitialPreferences(
+                new AutoInterstitialPreferences()
+                        .setActivitiesBetweenAds(5)
+        );
+
     }
+
+
 }

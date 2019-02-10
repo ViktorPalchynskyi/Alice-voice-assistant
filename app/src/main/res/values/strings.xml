@@ -32,6 +32,8 @@
     <string name="newspaper">Новости</string>
     <string name="people">Люди</string>
     <string name="some_name">Основные</string>
+    <string name="info">Справка</string>
+
 
     <string name="settings">Настройки устройства</string>
     <string name="content_list">
@@ -463,12 +465,6 @@
     </string>
 
 
-
-
-
-
-
-
     <string name="content_geography">
         \n
         • Население России.\n
@@ -498,8 +494,6 @@
     </string>
 
 
-
-
     <string name="content_biology">
         \n
 
@@ -522,7 +516,6 @@
     </string>
 
 
-
     <string name="content_history">
         \n
         • Начало Великой Отечествнной Войны?\n
@@ -538,8 +531,6 @@
 
 
     </string>
-
-
 
 
     <string name="content_physics">
@@ -579,10 +570,6 @@
         • Кто самый богатый человек в мире?\n
         • Кто изобрёл лампочку?\n
     </string>
-
-
-
-
 
 
     <string name="content_memory">
@@ -634,8 +621,6 @@
 • Сколько времени в Нью-Йорке?\n
 • Разница во времени с Берлином.\n
     </string>
-
-
 
 
     <string name="content_secret">
@@ -711,9 +696,17 @@
     </string>
 
 
+    <string name="content_info">
+    \n
+          \"Алиса голосовой помощник\" - это справочное приложение по командам голосового помощника Яндекс Алисы. Здесь Вы найдёте полный список голосовых команд, разделенный на категории.\n\n
+        В этом приложении НЕТ встроенной Алисы, для использования голосового помощника Вам нужно скачать приложение "Яндекс" или "Яндекс Браузер" и нажать там на фиолетовый значок в главном экране.
+
+
+    </string>
+
 
     <!--<string name="content_">-->
-        <!--\n-->
+    <!--\n-->
 
 
     <!--</string>-->
