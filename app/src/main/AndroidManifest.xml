@@ -48,7 +48,7 @@
         <activity android:name=".Geography" />
         <activity android:name=".History" />
         <activity android:name=".Biology" />
-        <activity android:name=".Phisics" />
+        <activity android:name=".Physics" />
         <activity android:name=".People" />
         <activity android:name=".Memory" />
         <activity android:name=".Holidays" />

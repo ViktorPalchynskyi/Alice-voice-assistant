@@ -122,7 +122,7 @@ public class Content extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), Biology.class));
                         break;
                     case 22:
-                        startActivity(new Intent(getApplicationContext(), Phisics.class));
+                        startActivity(new Intent(getApplicationContext(), Physics.class));
                         break;
                     case 23:
                         startActivity(new Intent(getApplicationContext(), People.class));
