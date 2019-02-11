@@ -179,7 +179,7 @@ public class Content extends AppCompatActivity {
 
         StartAppAd.setAutoInterstitialPreferences(
                 new AutoInterstitialPreferences()
-                        .setActivitiesBetweenAds(5)
+                        .setActivitiesBetweenAds(5   )
         );
 
     }
